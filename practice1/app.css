@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#e7c6ff;
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px 20px;
+  
+   
+    
+}
+.header img {
+    height: 40px;
+    width: 40px;
+    border: 2px solid blue;
+  padding: 4px;
+    border-radius:50%;
+   
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
+    padding: 20px;
+
+}
+.card{
+    border: 2px solid white ;
+    
+    text-align: center;
+    background-color: white ;
+    border-radius: 16px;
+    min-width: 300px;
+
+   
+
+}
+.card h2{
+    padding: 20px 0;
+}
+.card p{
+    padding: 30px;
+    font-size: small;
+}
+.card a{
+    border: 1px solid gray;
+    padding: 5px 20px;
+    border-radius: 30px;
+    height: 30px;
+    background-color: transparent;
+    color:black;
+    text-decoration: none;
+    font-size: 10px;
+  
+}
+.card button{
+    width: 100%;
+    height: 40px;
+    background-color:#edede9 ;
+    border: none;
+    
+   
+    border-radius: 10px 10px 18px 18px;
+}
+
+.card img{
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    
+
+    
+}
+.parent{
+ position: relative;
+ 
+}
+.child{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    color: white;
+    font-size: 28px;
+    text-align: left;
+}
+.parent-middle{
+    position: relative;
+
+    
+}
+.child-middle{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+    font-size: 28px;
+    color: white;
+    text-align: left;
+}
+.child h3:nth-of-type(1),
+.child-middle h3:nth-of-type(1)
+{
+    font-size: 22px;
+    font-weight: 400;
+}
+
+
+
+
+.footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px 20px;
+   
+
+}
+.footer button{
+    border: 1px solid gray;
+    padding: 5px 20px;
+    border-radius: 30px;
+    height: 30px;
+    background-color: transparent;
+    color:black;
+}
+.footer a{
+   text-decoration: none;
+   color: black;
+   font-size: small;
+
+}
+.footer ul{
+list-style: none;
+text-transform: uppercase;
+
+}
+.card h2:nth-of-type(2){
+    margin-top: 50px;
+}
+.card:nth-of-type(2){
+    margin: 8px 0;
+}
+@media(min-width:760px){
+    .main{
+        flex-direction: row;      
+    }
+     .card:nth-of-type(2){
+        margin: 0 8px ;
+     }
+
+        
+}
